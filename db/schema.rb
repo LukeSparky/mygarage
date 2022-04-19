@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_19_151709) do
     t.integer "year"
     t.string "trim"
     t.text "description"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
