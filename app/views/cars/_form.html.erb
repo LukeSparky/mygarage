@@ -9,34 +9,34 @@
         <% end %>
       </ul>
     </div>
-  <% end %>
+<% end %>
 
-  <div>
-    <%= form.label :model, style: "display: block" %>
-    <%= form.text_field :model %>
+  <div class ="form-floating mb-3">
+    <%= form.text_field :model, class: "form-control", id: "floating input", placeholder: "Model" %>
+    <%= form.label :model, for: "floating input" %>
   </div>
 
-  <div>
-    <%= form.label :make, style: "display: block" %>
-    <%= form.text_field :make %>
+  <div class="form-floating mb-3">
+    <%= form.text_field :make, class: "form-control", id: "floating input", placeholder: "Make"  %>
+    <%= form.label :make, for: "floating input" %>
   </div>
 
-  <div>
-    <%= form.label :year, style: "display: block" %>
-    <%= form.number_field :year %>
+  <div class="form-floating mb-3">
+    <%= form.number_field :year, class: "form-control", id: "floating input", placeholder: "Year" %>
+    <%= form.label :year, for: "floating input" %>
+  </div class="form-floating">
+
+  <div class="form-floating mb-3">
+    <%= form.text_field :trim, class: "form-control", id: "floating input", placeholder: "Trim" %>
+    <%= form.label :trim, for: "floating input" %>
   </div>
 
-  <div>
-    <%= form.label :trim, style: "display: block" %>
-    <%= form.text_field :trim %>
+  <div class="form-floating mb-3">
+    <%= form.text_area :description, class: "form-control", id: "floating input", placeholder: "Description"  %>
+    <%= form.label :description, for: "floating input" %>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+  <div class="form-floating">
+    <%= form.submit class: "form-control" %>
   </div>
 <% end %>
